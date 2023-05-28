@@ -158,12 +158,12 @@ logger.info(f"Here are the volumes of a cube given the side lenght in the list a
 
 # Task 3 Lists 6 - Using List Comprehension
 # Using List Comprehension to create a new list showing just the low tickets sales
-tickets_sold = [x for x in list1 if x < 0]
+tickets_sold_x3 = [x for x in list1 if x < 0]
 logger.info(f"Here are the tickets not sold, are the loss {tickets_sold}.")
 # Using List Comprehension to triple each value
 logger.info(f"Here are your ticket sales if everything was tripled = {tickets_sold_x3}")
 # Using List Comprehension to do whatever you want. I want to add 25 ticket sales to each value.
-games_lost_add_headstart = list(map(lambda k: k+25, tickets_sold))
+tickets_sold_add_extra = list(map(lambda k: k+25, tickets_sold))
 logger.info(f"Here are your tickets sold totals if you would add 25 tickets sold = {tickets_sold_add_extra}")
 logger.info(f"You could have sold out the show if you would have receievd those 25 extra tickets........")
 
